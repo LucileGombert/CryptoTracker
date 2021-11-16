@@ -1,0 +1,81 @@
+.toggle-switch input {
+  position: absolute;
+  opacity: 0;
+}
+  
+.toggle-switch input + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  padding: 5px;
+  width: 100px;
+  height: 40px;
+  border-radius: 40px;
+}
+
+.toggle-switch input + label:before,
+.toggle-switch input + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+  
+.toggle-switch input + label:before {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0 25px;
+  background-image: linear-gradient(-225deg, #ac32e4 0%, #7918f2 48%, #4801ff 100%);
+  border-radius: 40px;
+  content: attr(data-eur);
+  line-height: 40px;
+  text-align: right;
+  font-size: 20px;
+  color: #fff;
+}
+
+.toggle-switch input + label:after {    
+  top: 5px;
+  left: 5px;
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: margin .4s;
+}
+
+.toggle-switch input:checked + label:before {
+  content: attr(data-usd);
+  text-align: left;
+  color: #fff;
+}
+
+.toggle-switch input:checked + label:after {
+  margin-left: 60px;
+} 
+
+@media (max-width: 425px) {
+  .toggle-switch input + label {
+    width: 70px;
+    height: 30px;
+  }
+
+  .toggle-switch input + label:before {
+    padding: 0 15px;
+    line-height: 31px;
+  }
+  
+  .toggle-switch input + label:after {    
+    top: 2px;
+    left: 4px;
+    height: 25px;
+    width: 25px;
+  }
+  .toggle-switch input:checked + label:after {
+    margin-left: 36px;
+  } 
+}

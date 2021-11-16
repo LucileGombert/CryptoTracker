@@ -1,0 +1,80 @@
+.chartBorder {
+    border: 2px solid transparent;
+    border-radius: 40px;
+    margin: 2rem;
+    width: 90%;
+    max-width: 1031px;
+}
+
+.chartBorder.dark {
+    background-image: linear-gradient(#1a1a1c, #1a1a1c), radial-gradient(circle at bottom left,red,blue);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.chartBorder.light {
+    background-image: linear-gradient(#fff, #fff), radial-gradient(circle at bottom left,red,blue);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.chart {
+    margin: 1rem;
+}
+.chartButtons {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+.chartButton {
+    border: 3px solid #4801ff;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 800;
+    width: 9rem;
+}
+
+.chartButton.dark {
+    color: #fff;
+}
+
+.chartButton.light {
+    color: #111;
+}
+
+.chartButton:hover {
+    background-image: linear-gradient(-225deg, #ac32e4 0%, #7918f2 48%, #4801ff 100%);
+}
+
+
+@media (max-width: 880px) {
+    .chartButton {
+        font-size: 14px;
+        width: 7rem;
+    }
+}
+
+
+@media (max-width: 580px) {
+    .chartButtons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .chartButton {
+        width: 10rem;
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .chartButton {
+        font-size: 13px;
+        width: 6rem;
+        padding: 0.5rem 0.5rem;
+    }
+}

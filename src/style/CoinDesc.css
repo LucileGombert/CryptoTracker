@@ -1,0 +1,88 @@
+.coinDesc {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #d7d7d7;
+    padding-bottom: 1rem;
+    margin: 0 1.5rem 1.5rem 0;
+}
+
+.coinDescName {
+    width: 18%;
+    text-align: left;
+    position: sticky;
+    left: 0;
+    z-index: 4;
+}
+
+.coinDesc .dark, .coinDescName .dark {
+    background-color: #1a1a1c;
+}
+
+.coinDesc .light, .coinDescName .light {
+    background-color: #fff;
+}
+
+.coinDescSymbol {
+    width: 11%;
+    min-width: 54px;
+    text-align: right;
+    z-index: 1;
+}
+
+.coinDescPrice {
+    width: 15%;
+    min-width: 101px;
+    text-align: center;
+}
+
+.coinDescVolume {
+    width: 23%;
+    min-width: 155px;
+    text-align: center;
+}
+
+.coinDescPercent {
+    width: 10%;
+    min-width: 68px;
+    text-align: right;
+}
+
+.coinDescMarketcap {
+    width: 23%;
+    min-width: 155px;
+    text-align: right;
+}
+
+.coinDescVolume, .coinDescMarketcap {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.coinDescVolume.dark, .coinDescMarketcap.dark {
+    color: #fff;
+}
+
+.coinDescVolume.light, .coinDescMarketcap.light {
+    color: #1a1a1c;
+}
+
+.coinDescVolume i, .coinDescMarketcap i{
+    margin-right: 0.5rem;
+}
+
+.coinDescVolume.active, .coinDescMarketcap.active {
+    color: #ac32e4;
+}
+
+@media (max-width: 425px) {
+    .coinDesc {
+      font-size: 13px;
+    }
+
+    .coinDescPrice {
+        text-align: end;
+    }
+}

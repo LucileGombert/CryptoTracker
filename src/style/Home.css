@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body .dark {
+  background-color: #1a1a1c;
+  color: #fff;
+}
+
+body .light {
+  background-color: #fff;
+  color: #1a1a1c;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.home h1 {
+  margin-bottom: 32px;
+}
+
+.tools {
+  margin: 34px 0 50px 0;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toolsBloc {
+  display: flex;
+  align-items: center;
+}
+
+
+.coins {
+  max-width: 900px;
+  width: 100%;
+  height: 450px;
+  overflow-y: scroll;
+  margin-bottom: 2.5rem;
+  z-index: 1;
+}
+
+.coins::-webkit-scrollbar {
+  width: 12px; 
+  height: 12px;
+}
+
+.coins::-webkit-scrollbar-track {
+  border: 2px solid #4801ff;
+  background-color: rgba(255, 255, 255, 0.692);
+  border-radius: 20px;
+}
+
+.coins::-webkit-scrollbar-thumb {
+  background-color: #4801ff;
+  border-radius: 20px; 
+}
+
+.coins::-webkit-scrollbar-corner  {
+  display: none;
+}
+
+.coinBloc {
+  width: 100%;
+  margin: auto;
+}
+
+
+thead { 
+  position: sticky; 
+  top: 0; 
+  z-index: 3;
+}
+
+tbody {
+  position: relative;
+}
+
+
+.sign {
+  padding: 2rem 0 1rem 0;
+}
+
+@media (max-width: 960px) {
+  .coins {
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  .coins {
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 425px) {
+  .home h1 {
+    font-size: 25px;
+  }
+}
+
+
+.centered-block {
+  position: relative;
+}
+.centered-block__man {
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+.centered-block__container {
+  opacity: 1;
+  transition: opacity 0.5s;
+  padding-bottom: 90px;
+}
+
+.centered-block__container--dragging {
+  opacity: 0.95;
+}
+
+.scroll-container {
+  height: 145px;
+  width: 430px;
+  background: #282828;
+  border: solid 5px #E2D7C7;
+}
