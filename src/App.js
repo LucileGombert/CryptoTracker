@@ -22,7 +22,7 @@ const App = () => {
               {/* Pour déploiement */}
               <Route path='/CryptoTracker' exact component={Home} />
               <Route path='/CryptoTracker/coin/:id' component={OneCoin} /> 
-              <Route path='/CryptoTracker/favorite' exact component={Favorite} />
+              <Route path='/CryptoTracker/favorite' component={Favorite} />
             </Switch>
           </Router>
         </ThemeContextProvider>
