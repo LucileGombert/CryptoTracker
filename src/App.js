@@ -15,14 +15,14 @@ const App = () => {
         <ThemeContextProvider>
           <BrowserRouter>
             <Switch>
-              {/* <Route path='/' exact component={Home} />
+              <Route path='/' exact component={Home} />
               <Route path='/coin/:id' component={OneCoin} />
-              <Route path='/favorite' exact component={Favorite} /> */}
+              <Route path='/favorite' exact component={Favorite} />
 
               {/* Pour déploiement */}
-              <Route path='/CryptoTracker' exact component={Home} />
-              <Route path='/coin/:id' component={OneCoin} /> 
-              <Route path='/CryptoTracker/favorite' component={Favorite} />
+              {/* <Route path='/CryptoTracker' exact component={Home} />
+              <Route path='/CryptoTracker/coin/:id' component={OneCoin} /> 
+              <Route path='/CryptoTracker/favorite' component={Favorite} /> */}
             </Switch>
           </BrowserRouter>
         </ThemeContextProvider>
