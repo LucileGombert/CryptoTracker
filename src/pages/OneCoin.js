@@ -52,7 +52,7 @@ const OneCoin = () => {
     return (
         <div className={theme ? 'oneCoin dark' : 'oneCoin light'}>
             <div className="tools">
-                <NavLink to="/CryptoTracker" className="arrowLink">
+                <NavLink to="/" className="arrowLink">
                     <i className="fas fa-arrow-left"></i>
                 </NavLink>
 

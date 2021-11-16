@@ -74,7 +74,7 @@ const Favorite = () => {
     return (
         <div className={theme ? 'favorite dark' : 'favorite light'}>
             <div className="tools">
-                <NavLink to="/CryptoTracker" className="arrowLink">
+                <NavLink to="/" className="arrowLink">
                     <i className="fas fa-arrow-left"></i>
                 </NavLink>
 
