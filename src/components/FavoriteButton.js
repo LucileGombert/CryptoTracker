@@ -5,7 +5,7 @@ import '../style/FavoriteButton.css';
 
 const FavoriteButton = () => {
     return (
-        <NavLink to="/favorite" className="favoriteLink">
+        <NavLink to="/CryptoTracker/favoris" className="favoriteLink">
             <div className="favoriteIcon">
                 <i className="far fa-heart favoriteButton favoriteEmpty"></i>
                 <i className="fas fa-heart favoriteButton favoriteFilled"></i>  
