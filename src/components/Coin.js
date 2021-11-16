@@ -40,7 +40,7 @@ const Coin = ({ id, name, image, symbol, price, volume, priceChange, marketcap, 
             <td className="coinMarketcap">{marketcap.toLocaleString()} {currencySymbol}</td>
         
             <td className={theme ? 'coinView  dark' : 'coinView light'}>
-                <NavLink to={`/coin/${id}`} className="link">
+                <NavLink to={`/CryptoTracker/jeton/${id}`} className="link">
                     <i className="far fa-eye"></i>
                 </NavLink>
 
