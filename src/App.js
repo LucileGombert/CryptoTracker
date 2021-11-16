@@ -16,8 +16,8 @@ const App = () => {
           <BrowserRouter>
             <Switch>
               <Route path='/' exact component={Home} />
-              <Route path='/jeton/:id' component={OneCoin} />
-              <Route path='/favoris' exact component={Favorite} />
+              <Route path='/coin/:id' component={OneCoin} />
+              <Route path='/favorite' exact component={Favorite} />
 
               {/* Pour déploiement */}
               {/* <Route path='/CryptoTracker' exact component={Home} />
