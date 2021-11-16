@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import FavoriteContextProvider from './context/FavoriteContext';
 import ThemeContextProvider from './context/ThemeContext';
@@ -13,7 +13,7 @@ const App = () => {
     <div>
       <FavoriteContextProvider>
         <ThemeContextProvider>
-          <Router>
+          <BrowserRouter>
             <Switch>
               {/* <Route path='/' exact component={Home} />
               <Route path='/coin/:id' component={OneCoin} />
@@ -24,7 +24,7 @@ const App = () => {
               <Route path='/CryptoTracker/coin/:id' component={OneCoin} /> 
               <Route path='/CryptoTracker/favorite' component={Favorite} />
             </Switch>
-          </Router>
+          </BrowserRouter>
         </ThemeContextProvider>
       </FavoriteContextProvider>
     </div>
